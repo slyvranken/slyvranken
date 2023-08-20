@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" class="name" id="name-label">Name <input required type="text" id="name" placeholder="Enter your name"></input></label>
+        <label for="email" class="email" id="email-label">Email <input required type="email" id="email" placeholder="Enter your email"></input></label>
+        <label for="number" class="number" id="number-label"> Age (optional) <input type="number" id="number" placeholder="Age" min="13" max="120"></input></label>
+        <label for="dropdown" class="select">What option best describes your current role?<select id="dropdown">
+        <option value="">Select one</option>
+        <option value="1">Student</option>
+        <option value="2">Employed</option>
+        </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Would you recommend freeCodeCamp to a friend?</label>
+        <input type="radio" value="definitely" name="recommend"> Definitely</input>
+        <input type="radio" value="maybe" name="recommend">Maybe</input>
+        <input type="radio" value="not-sure" name="recommend">Not sure</input>
+      </fieldset>
+      <fieldset>
+        <label for="checkbox" class="checkbox">How can we improve?
+          <input type="checkbox" id="checkbox" value="front-end-project"> Front-end Projects</input>
+          <input type="checkbox" id="checkbox" value="back-end-project"> Back-end Projects
+          <input type="checkbox" id="checkbox" value="challenges"> Challenges </input>
+        </label>
+        <label for="final-comments">Any final comments?<textarea id="final-comments" placeholder="I like to code..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit">
+    </form>
+  </body>
